@@ -1,0 +1,25 @@
+{
+  "name": "phase-2-assessment",
+  "version": "1.0.0",
+  "description": "Phase 2 Assessment, Week of 7/31/17",
+  "main": "README.md",
+  "scripts": {
+    "test": "mocha --require babel-register part-1/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allyface/phase-2-assessment.git"
+  },
+  "author": "Ally Kendall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allyface/phase-2-assessment/issues"
+  },
+  "homepage": "https://github.com/allyface/phase-2-assessment#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-register": "^6.24.1",
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0"
+  }
+}
