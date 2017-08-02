@@ -260,4 +260,4 @@ $ pwd
 
 ### Requirements
 
-- [ ] __50:__ All questions are answered correctly.
+- [x] __50:__ All questions are answered correctly.
