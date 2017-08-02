@@ -184,7 +184,7 @@ Finding clients in City "Boston"...
 
 #### Requirements
 
-- [ ] __40:__ `searchByCompany.js` script prints the client  `id`, `phone`, and `company` for all clients whose `company` starts with the provided `company` argument.
+- [x] __40:__ `searchByCompany.js` script prints the client  `id`, `phone`, and `company` for all clients whose `company` starts with the provided `company` argument.
 - [ ] __40:__ `searchByCity.js` script prints the client `id`, `rep_name`, `company`, `city`, and `state` that for all clients whose `city` matches the provided `city` argument.
 
 ## Part 3: HTML layout for Filmtube
