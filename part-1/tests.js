@@ -24,7 +24,7 @@ describe('Functions.month()', () => {
   })
 })
 
-describe.only('Functions.reverseSentence()', () => {
+describe('Functions.reverseSentence()', () => {
   it('should be a function', () => {
     expect(Functions.reverseSentence).to.be.a('function')
   })
@@ -44,6 +44,32 @@ describe.only('Functions.reverseSentence()', () => {
   it('throws an error when given invalid input', () => {
     expect(function() {
       Functions.reverseSentence(12345)
+    }).to.throw(Error, 'invalid input')
+  })
+})
+
+describe.only('Functions.nameProps()', () => {
+  it('should be a function', () => {
+    expect(Functions.nameProps).to.be.a('function')
+  })
+
+  it('returns the names of an object\'s properties in alphabetical order', () => {
+    let friend = {
+      name: 'Dominique',
+      age: 30,
+      phone: '555-555-5555'
+    }
+    expect(Functions.nameProps(friend)).to.deep.equal(['age', 'name', 'phone'])
+  })
+
+  it('returns an empty array if given an empty object', () => {
+    let obj = {}
+    expect(Functions.nameProps(obj)).to.deep.equal([])
+  })
+
+  it('throws an error when given invalid input', () => {
+    expect(function() {
+      Functions.nameProps('Oops a string!')
     }).to.throw(Error, 'invalid input')
   })
 })

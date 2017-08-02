@@ -85,10 +85,10 @@ nameProps({}) // => []
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `nameProps()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `nameProps()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `nameProps()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `nameProps()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `nameProps()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `nameProps()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `nameProps()` is defined in `functions.js`.
+- [x] __10:__ Tests for `nameProps()` are passing.
 
 ### Filter between
 
