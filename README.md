@@ -19,7 +19,7 @@ Each requirement has a point value. A fully complete requirement gets full point
 
 - [x] __10:__ Solution is in a public GitHub repository called `phase-2-challenge`.
 - [x] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
-- [ ] __20:__ Git history shows frequent commits.
+- [x] __20:__ Git history shows frequent commits.
 
 ## Part 1: Write tests and solutions for these functions
 
@@ -29,7 +29,7 @@ You can use whichever testing tools you prefer: `console.assert()` (builtin to N
 
 ### Show a month
 
-Write a function `month(date)` to find the month for a given `Date` object, returing the name of the month as a string ('January', 'February', 'March', 'April', 'May', ... etc).
+Write a function `month(date)` to find the month for a given `Date` object, returning the name of the month as a string ('January', 'February', 'March', 'April', 'May', ... etc).
 
 Example:
 
@@ -43,10 +43,10 @@ month(christmas) // returns "December"
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `month()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `month()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `month()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `month()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `month()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
+- [x] __10:__ Tests for `month()` are passing.
 
 ### Reverse a sentence
 
