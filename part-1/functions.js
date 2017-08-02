@@ -19,7 +19,7 @@ export default class Functions {
     if (typeof string != 'string') {
       throw new Error('invalid input')
     }
-    
+
     let stringArray = string.split(' ')
     let reverseArray = []
 
@@ -28,5 +28,14 @@ export default class Functions {
     }
 
     return reverseArray.join(' ')
+  }
+
+  static nameProps(obj) {
+    if (typeof obj != 'object') {
+      throw new Error('invalid input')
+    }
+
+    let objProps = Object.keys(obj)
+    return objProps.sort()
   }
 }
