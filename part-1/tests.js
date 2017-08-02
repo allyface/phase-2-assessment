@@ -48,7 +48,7 @@ describe('Functions.reverseSentence()', () => {
   })
 })
 
-describe.only('Functions.nameProps()', () => {
+describe('Functions.nameProps()', () => {
   it('should be a function', () => {
     expect(Functions.nameProps).to.be.a('function')
   })
@@ -70,6 +70,31 @@ describe.only('Functions.nameProps()', () => {
   it('throws an error when given invalid input', () => {
     expect(function() {
       Functions.nameProps('Oops a string!')
+    }).to.throw(Error, 'invalid input')
+  })
+})
+
+describe.only('Functions.filterBetween()', () => {
+  let arr = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
+  it('should be a function', () => {
+    expect(Functions.filterBetween).to.be.a('function')
+  })
+
+  it('takes an array and returns only the elements between min and max alphabetically', () => {
+    expect(Functions.filterBetween(arr, 'deer', 'giraffe')).to.deep.equal(['dog'])
+  })
+
+  it('returns elements in their original order', () => {
+    expect(Functions.filterBetween(arr, 'chimp', 'lobster')).to.deep.equal(['dog', 'lion', 'cow'])
+  })
+
+  it('returns an empty array if no elements are between min and max', () => {
+    expect(Functions.filterBetween(arr, 'chickadee', 'chimpanzee')).to.deep.equal([])
+  })
+
+  it('throws an error when given invalid input', () => {
+    expect(function() {
+      Functions.filterBetween(arr, 27, 'ocelot')
     }).to.throw(Error, 'invalid input')
   })
 })

@@ -31,11 +31,29 @@ export default class Functions {
   }
 
   static nameProps(obj) {
+
     if (typeof obj != 'object') {
       throw new Error('invalid input')
     }
 
     let objProps = Object.keys(obj)
     return objProps.sort()
+  }
+
+  static filterBetween(arr, min, max) {
+
+    let filteredArr = []
+
+    if (typeof arr != 'object' || typeof min != 'string' || typeof max != 'string') {
+      throw new Error('invalid input')
+    }
+
+    arr.forEach(function (string) {
+      if(string.toLowerCase() > min.toLowerCase() && string.toLowerCase() < max.toLowerCase()) {
+        filteredArr.push(string)
+      }
+    })
+
+    return filteredArr
   }
 }
