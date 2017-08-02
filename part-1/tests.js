@@ -74,7 +74,7 @@ describe('Functions.nameProps()', () => {
   })
 })
 
-describe.only('Functions.filterBetween()', () => {
+describe('Functions.filterBetween()', () => {
   let arr = ['dog', 'cat', 'zebra', 'ape', 'lion', 'cow']
   it('should be a function', () => {
     expect(Functions.filterBetween).to.be.a('function')
