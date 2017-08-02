@@ -209,7 +209,7 @@ Design a layout to match the following wireframe:
 - [x] __20:__ Page has a "Categories" sidebar with all categories for movies
 - [x] __10:__ Page has a main content area showing each of the movies
 - [x] __20:__ Main content lists all movies name, duration, and a "Play" button
-- [ ] __20:__ Clicking on a category in the "Categories" sidebar will jump to that category
+- [x] __20:__ Clicking on a category in the "Categories" sidebar will jump to that category
 - [x] __10:__ Main content organizes all movies by section
 
 ## Part 4: Quiz time!
