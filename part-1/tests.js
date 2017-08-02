@@ -23,3 +23,27 @@ describe('Functions.month()', () => {
     }).to.throw(Error, 'invalid input')
   })
 })
+
+describe.only('Functions.reverseSentence()', () => {
+  it('should be a function', () => {
+    expect(Functions.reverseSentence).to.be.a('function')
+  })
+
+  it('returns a given string with the words in reverse order', () => {
+    expect(Functions.reverseSentence("The cat jumped over the dog.")).to.equal('dog. the over jumped cat The')
+  })
+
+  it('returns a single word unchanged', () => {
+    expect(Functions.reverseSentence('Fabulous!')).to.equal('Fabulous!')
+  })
+
+  it('treats any series of non-space characters as a word', () => {
+    expect(Functions.reverseSentence('Hello, world!')).to.equal('world! Hello,')
+  })
+
+  it('throws an error when given invalid input', () => {
+    expect(function() {
+      Functions.reverseSentence(12345)
+    }).to.throw(Error, 'invalid input')
+  })
+})

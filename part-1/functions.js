@@ -13,4 +13,20 @@ export default class Functions {
       }
     }
   }
+
+  static reverseSentence(string) {
+
+    if (typeof string != 'string') {
+      throw new Error('invalid input')
+    }
+    
+    let stringArray = string.split(' ')
+    let reverseArray = []
+
+    for (let i = 0; i < stringArray.length; i++) {
+      reverseArray.unshift(stringArray[i])
+    }
+
+    return reverseArray.join(' ')
+  }
 }
