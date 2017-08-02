@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  border: 1px solid;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header p {
+  padding-left: 10px;
+}
+
+header button {
+  margin: 10px;
+}
+
+.body-content {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  border: 1px solid;
+}
+
+.sidebar-title {
+  border: 1px solid;
+  background-color: LightGrey;
+}
+
+.main-content {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.category-name {
+  font-style: italic;
+}
+
+.item {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item button {
+  width: 100px;
+}
